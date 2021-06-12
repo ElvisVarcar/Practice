@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header*/
+header{
+    background-color: lightgray;
+    padding: 20px;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li:hover{
+    font-weight: bold;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Widgets*/
+.widgets {
+    background-color: lightskyblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.widget {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 2%;
+}
+
+/*hero*/
+.hero {
+    margin: 40px;
+    display: flex;
+}
+
+.links {
+    background-color: lightpink;
+    width: 400px;
+    margin-right: 40px;
+}
+
+.rechts{
+    width: 400px;
+}
+
+.rechts img
+{
+    width: 400px;
+}
