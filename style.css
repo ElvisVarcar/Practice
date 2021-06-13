@@ -1,33 +1,83 @@
 body{
     margin: 0;
+    padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+
+p, h1{
+    padding: 20px 40px 20px 40px;
+}
+
+.sections{
+    width: 1200px;
+    margin: 0 auto;
 }
 
 /* Header*/
 header{
-    background-color: lightgray;
-    padding: 20px;
+    background-color: white;
 }
 
 li{
     list-style: none;
     display: inline-block;
+    padding: 30px 40px;
+    border-radius: 5%;
 }
 
 li:hover{
-    font-weight: bold;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    cursor: pointer;
 }
 
 ul{
-    margin: 0;
+    margin: 0px 0px 0px 100px;
     padding: 0;
+}
+
+/*hero*/
+.hero {
+    margin: 100px 40px 40px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    margin-right: 40px;
+    border-radius: 2%;
+    position: relative;
+}
+
+.cta{
+    border: 2px solid black;
+    position: absolute;
+    top: 500px;
+    left: 110px;
+    border-radius: 0.4EM;
+    cursor: pointer;
+    
+}
+
+.cta p{
+    margin: 0px;
+}
+
+.rechts img
+{
+    width: 400px;
+    border-radius: 2%;
 }
 
 /* Widgets*/
 .widgets {
-    background-color: lightskyblue;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 .widget {
@@ -36,25 +86,33 @@ ul{
     background-color: white;
     margin: 20px;
     border-radius: 2%;
+    cursor: pointer;
+    box-shadow: 0 20px 30px 20px rgba(0, 0, 0, 0.2);    
 }
 
-/*hero*/
-.hero {
-    margin: 40px;
-    display: flex;
+.widget:hover{
+    box-shadow:
+    0 0.7px 0.7px rgba(0, 0, 0, 0.169),
+    0 1.6px 1.8px rgba(0, 0, 0, 0.249),
+    0 3px 3.4px rgba(0, 0, 0, 0.312),
+    0 5.4px 6px rgba(0, 0, 0, 0.373),
+    0 10px 11.3px rgba(0, 0, 0, 0.447),
+    0 24px 27px rgba(0, 0, 0, 0.58);  
 }
 
-.links {
-    background-color: lightpink;
-    width: 400px;
-    margin-right: 40px;
+
+
+/*Footer*/
+footer{
+    background-color: rgb(65, 65, 65);
+    color: white;
+    height: 50px;
+    text-align: center;
+   
 }
 
-.rechts{
-    width: 400px;
-}
+footer p{
+    margin-top: 100px;
+    padding: 15px 0 0 0;
 
-.rechts img
-{
-    width: 400px;
 }
