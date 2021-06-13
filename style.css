@@ -1,3 +1,7 @@
+:root{
+    --AkzentFarbe: #65c266;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -17,6 +21,7 @@ p, h1{
 /* Header*/
 header{
     background-color: white;
+    border-bottom: 2px solid var(--AkzentFarbe);
 }
 
 li{
@@ -27,7 +32,7 @@ li{
 }
 
 li:hover{
-    background-color: rgb(65, 65, 65);
+    background-color: var(--AkzentFarbe);
     color: white;
     cursor: pointer;
 }
@@ -53,18 +58,33 @@ ul{
     position: relative;
 }
 
+.links h1{
+    color: var(--AkzentFarbe);
+}
+
 .cta{
-    border: 2px solid black;
+    border: 2px solid var(--AkzentFarbe);
     position: absolute;
     top: 500px;
     left: 110px;
     border-radius: 0.4EM;
     cursor: pointer;
-    
+    box-shadow: 0 20px 30px 20px rgba(0, 0, 0, 0.2);  
+}
+
+.cta:hover{
+    box-shadow:
+    0 0.7px 0.7px rgba(0, 0, 0, 0.169),
+    0 1.6px 1.8px rgba(0, 0, 0, 0.249),
+    0 3px 3.4px rgba(0, 0, 0, 0.312),
+    0 5.4px 6px rgba(0, 0, 0, 0.373),
+    0 10px 11.3px rgba(0, 0, 0, 0.447),
+    0 24px 27px rgba(0, 0, 0, 0.58);
 }
 
 .cta p{
     margin: 0px;
+    color: var(--AkzentFarbe);
 }
 
 .rechts img
