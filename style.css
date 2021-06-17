@@ -167,6 +167,12 @@ ul{
     grid-column: 3/4;
 }
 
+/*Videos*/
+.videos{
+    margin-top: 100px;
+    border-radius: 2%;
+}
+
 
 /*Footer*/
 footer{
