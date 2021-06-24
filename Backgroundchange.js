@@ -21,7 +21,7 @@ console.log(links);
       bstyle.color = "black"; //Textfarbe
     } else {
       bstyle.backgroundColor = "Green";
-      bstyle.color = "white";
+      bstyle.color = "black";
     } 
   }
   

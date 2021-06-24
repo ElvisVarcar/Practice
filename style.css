@@ -29,6 +29,7 @@ p, h1{
 header{
     background-color: white;
     border-bottom: 2px solid var(--AkzentFarbe);
+    margin-bottom: 100px;
 }
 
 li{
@@ -51,7 +52,7 @@ ul{
 
 /*hero*/
 .hero {
-    margin: 100px 40px 40px 40px;
+    margin: 0px 40px 40px 40px;
     display: flex;
     justify-content: center;
 }
@@ -199,4 +200,18 @@ footer p{
     margin-top: 100px;
     padding: 15px 0 0 0;
 
+}
+
+/* Cars */
+.cars{
+    width: 1200px;
+    margin:  auto;
+    background-color: white;
+}
+
+.car{
+    border: grey 1px solid;
+    width: 300px;
+    height: 500px;
+    border-radius: 2%;
 }
