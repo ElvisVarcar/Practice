@@ -16,7 +16,8 @@ console.log(links);
     if (hr >=20 || hr<=08) { //Falls nach 20:00 Uhr Abends oder vor 08:00 Uhr Morgens
       bstyle.backgroundColor = "black"; //Hintergrundfarbe des Body
       //links.style.backgroundColor = "blue"; //Hintergrundfarbe des Links-Blocks
-      links.backgroundColor = "blue";
+      //links.backgroundColor = "blue";
+      //links.style.updateBackground = "blue";
       cta.backgroundColor = "red";
       bstyle.color = "black"; //Textfarbe
     } else {
