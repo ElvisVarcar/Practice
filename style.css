@@ -201,22 +201,52 @@ footer p{
     display:flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    align-items: center;
 }
 
-.searchfield{
-    border-radius: 10%;
+form{
+    width: 356px;
+    height: 40px;
 }
 
-input{
-    font-size: 1.4em;
+form input{
+    position: relative;
+    display: inline-block;
+    font-size: 1.2em;
 }
+
+form input[type="text"]{
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    border:none;
+    outline:none;
+    padding: 0 20px;
+    border-radius: 25px 0 0 25px;
+}
+
+form input[type="submit"]{
+    border-radius: 0 25px 25px 0;
+    height: 100%;
+    width: 100px;
+    border:none;
+    cursor: pointer;
+    background-color: var(--AkzentFarbe);
+    color: white;
+    left:-6px
+}
+
+form input[type="submit"]:hover{
+    transform: scale(1.01);
+}
+
 
 .filter{
     color: var(--AkzentFarbe);
     font-size: 1.2em;
     cursor:pointer;
     border: var(--AkzentFarbe) solid 3px;
-    border-radius: 5ch;
+    border-radius: 25px;
     padding: 5px 20px;
 }
 
