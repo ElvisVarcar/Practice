@@ -99,8 +99,7 @@ ul{
     color: var(--AkzentFarbe);
 }
 
-.rechts img
-{
+.rechts img{
     width: 400px;
     border-radius: 2%;
 }
@@ -171,7 +170,6 @@ ul{
     display: flex;
 }
 
-
 iframe{
     border: none;
     padding: 10px;
@@ -226,7 +224,6 @@ input{
     color: white;
     background-color: var(--AkzentFarbe);
 }
-
 
 /* Car Cards*/
 .garage{
