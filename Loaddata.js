@@ -1,28 +1,55 @@
-//Mit AJAX die daten laden
-//var url = "http://oss.sheetjs.com/test_files/formula_stress_test.xlsx";
-var url = "C:\Users\gerzic\Documents\GitHub\Practice\data\cars.xlsx";
+//Methode 2
+var selectedFile;
+document.addEventListener("change", function(event) {
+    selectedFile = event.target.files[0];
+  });
 
-/* set up async GET request */
-var req = new XMLHttpRequest();
-req.open("GET", url, true);
-req.responseType = "arraybuffer";
+document.getElementById('uploadCars').addEventListener("click", function(){
+    //if (selectedFile) {
+    var fileReader = new FileReader();
+    fileReader.onload = function(event){
+        var data = event.target.result;
+        var workbook = XLSX.read(data, {
+            type: "binary"
+          });
+          workbook.SheetNames.forEach(sheet => {
+            let rowObject = XLSX.utils.sheet_to_row_object_array(
+              workbook.Sheets[sheet]
+            );
+            let jsonObject = JSON.stringify(rowObject);
+            console.log(jsonObject);
+          })
+    };
+    fileReader.readAsBinaryString(selectedFile);
+    //}
+});
 
-req.onload = function(e) {
-  var arraybuffer = req.response;
+console.log(selectedFile);
 
-  //Daten zu Binary-string convertieren
-  var data = new Uint8Array(req.response);
-//   var arr = new Array();
-//   for (var i=0; i!=data.length; i++){
-//       arr[i]=String.fromCharCode(data[i]);
-//   }
-//   var bstr = arr.join("");
+// //Mit AJAX die daten laden
+// //var url = "http://oss.sheetjs.com/test_files/formula_stress_test.xlsx";
+// var url = "C:\Users\gerzic\Documents\GitHub\Practice\data\cars.xlsx";
 
-  //Xlsx aufruf
-  var workbook = XLSX.read(data, {type:"array"});
+// /* set up async GET request */
+// var req = new XMLHttpRequest();
+// req.open("GET", url, true);
+// req.responseType = "arraybuffer";
 
-  //Start mit dem Einlesen der Daten
-    var worksheet = workbook.s
-}
+// req.onload = function(e) {
+//   var arraybuffer = req.response;
 
-req.send();
+//   //Daten zu Binary-string convertieren
+//   var data = new Uint8Array(req.response);
+// //   var arr = new Array();
+// //   for (var i=0; i!=data.length; i++){
+// //       arr[i]=String.fromCharCode(data[i]);
+// //   }
+// //   var bstr = arr.join("");
+
+//   //Xlsx aufruf
+//   var workbook = XLSX.read(data, {type:"array"});
+
+//   //Start mit dem Einlesen der Daten
+//     var worksheet = workbook.s
+// }
+// req.send();
