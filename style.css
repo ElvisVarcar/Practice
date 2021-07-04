@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: Verdana, sans-serif;
 }
 
 html, body{
@@ -22,11 +23,11 @@ html, body{
     0 24px 27px rgba(0, 0, 0, 0.58); 
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body{ 
     background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .hero p, h1{
@@ -43,7 +44,7 @@ a:visited{
 
 .sections{
     width: 1280px;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
 }
 
 /* Header*/
@@ -200,9 +201,21 @@ footer{
     height: auto;
     text-align: center;
     padding: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto;
+}
+
+footer i{
+    padding: 10px;
+    cursor:pointer;
+    color:white;
+}
+
+footer i:hover{
+    color: var(--AkzentFarbe);
+}
+
+footer i:active{
+    transform: scale(0.98);
 }
 
 /* ------------------------------------------ Cars ----------------------------------- */
