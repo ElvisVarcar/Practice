@@ -17,7 +17,9 @@ xhttp.onreadystatechange = function () {
             const carPrice = document.createElement("div");
             carPrice.classList.add("carprice", "carelement");
             carWidget.appendChild(carPrice);
-            carPrice.innerText = auto.preis;
+            let unformatedPrice = auto.preis;
+            const formatter = new Intl.NumberFormat('de');
+            carPrice.innerText = formatter.format(unformatedPrice);
             const carImage = document.createElement("div");
             carImage.classList.add("carimage", "carelement");
             const carImageWidget = document.createElement("img");
@@ -40,7 +42,8 @@ xhttp.onreadystatechange = function () {
             const carKm = document.createElement("div");
             carKm.classList.add("carkm", "carelement", "cardetail");
             carWidget.appendChild(carKm);
-            carKm.innerText = auto.kilometer;
+            let unformatedKm = auto.kilometer;
+            carKm.innerText = formatter.format(unformatedKm);
             const carPsTitle = document.createElement("div");
             carPsTitle.classList.add("carpstitle", "carelement", "cardetailtitle");
             carWidget.appendChild(carPsTitle);
