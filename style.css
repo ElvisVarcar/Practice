@@ -47,6 +47,10 @@ a:visited{
     margin: 0 auto 100px auto;
 }
 
+.fade {
+    -webkit-mask-image: linear-gradient(180deg, #000 50%, transparent);
+  }
+
 /* Header*/
 header{
     background-color: white;
@@ -284,19 +288,6 @@ form input[type="submit"]:hover{
     grid-template-columns: repeat(4, 320px);
 }
 
-.carheader{grid-area: carheader; padding: 20px; font-size: 1.2em;}
-.carprice{grid-area: carprice; color: var(--AkzentFarbe);}
-.carimage{grid-area: carimage;}
-.caryeartitle{grid-area: caryeartitle;}
-.caryear{grid-area: caryear; }
-.carkmtitle{grid-area: carkmtitle;}
-.carkm{grid-area: carkm;}
-.carpstitle{grid-area: carpstitle;}
-.carps{grid-area: carps;}
-.carenginetitle{grid-area: carenginetitle;}
-.carengine{grid-area: carengine;}
-.cardescription{grid-area: cardescription; padding: 20px; font-size: 0.8em;}
-
 .car{
     background-color: white;
     margin: 0px 10px 40px 10px;
@@ -315,6 +306,19 @@ form input[type="submit"]:hover{
     align-items: center;
 }
 
+.carheader{grid-area: carheader; padding: 20px; font-size: 1.2em;}
+.carprice{grid-area: carprice; color: var(--AkzentFarbe);}
+.carimage{grid-area: carimage;}
+.caryeartitle{grid-area: caryeartitle;}
+.caryear{grid-area: caryear; }
+.carkmtitle{grid-area: carkmtitle;}
+.carkm{grid-area: carkm;}
+.carpstitle{grid-area: carpstitle;}
+.carps{grid-area: carps;}
+.carenginetitle{grid-area: carenginetitle;}
+.carengine{grid-area: carengine;}
+.cardescription{grid-area: cardescription; font-size: 0.8em; height: 100%; padding: 10px;}
+
 .car:hover{
     cursor: pointer;
     transform: scale(1.01);
@@ -332,9 +336,11 @@ form input[type="submit"]:hover{
     margin-top: 10px;
 }
 
+/*carelement dient nur zum sichtbar machen des Grids innerhalb eines Carwidgets.
 .carelement{
-    /*border: black 1px solid;*/
+    border: black 1px solid;
 }
+*/
 
 .carimageitself{
     width: 100%;

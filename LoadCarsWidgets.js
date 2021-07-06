@@ -1,3 +1,8 @@
+//Versuch auf die autoDatenJson aus dem index.html zu greifen, funktioniert so nicht.
+//let autoData = JSON.parse(autoDatenJson);
+//console.log(autoData);
+
+//Stattdessen ein json file in data angelegt (cars-test.json) und mit diese die Auto Widgets geladen:
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -61,7 +66,7 @@ xhttp.onreadystatechange = function () {
             carWidget.appendChild(carEngine);
             carEngine.innerText = auto.motor;
             const carDescription = document.createElement("div");
-            carDescription.classList.add("cardescription", "carelement");
+            carDescription.classList.add("cardescription", "carelement", "fade");
             carWidget.appendChild(carDescription);
             carDescription.innerText = auto.beschreibung;
 
