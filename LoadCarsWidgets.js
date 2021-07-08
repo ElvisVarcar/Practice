@@ -24,7 +24,7 @@ xhttp.onreadystatechange = function () {
             carWidget.appendChild(carPrice);
             let unformatedPrice = auto.preis;
             const formatter = new Intl.NumberFormat('de');
-            carPrice.innerText = formatter.format(unformatedPrice);
+            carPrice.innerText = "€ " + formatter.format(unformatedPrice);
             const carImage = document.createElement("div");
             carImage.classList.add("carimage", "carelement");
             const carImageWidget = document.createElement("img");
