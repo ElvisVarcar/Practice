@@ -2,7 +2,7 @@
 //let autoData = JSON.parse(autoDatenJson);
 //console.log(autoData);
 
-//Stattdessen ein json file in data angelegt (cars-test.json) und mit diese die Auto Widgets geladen:
+//Stattdessen ein json file in data angelegt (cars-test.json) und aus diesem die Auto Widgets geladen:
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {

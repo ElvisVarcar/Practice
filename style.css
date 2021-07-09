@@ -306,8 +306,8 @@ form input[type="submit"]:hover{
     align-items: center;
 }
 
-.carheader{grid-area: carheader; padding: 20px; font-size: 1.2em;}
-.carprice{grid-area: carprice; color: var(--AkzentFarbe);}
+.carheader{grid-area: carheader; padding: 10px; font-size: 1.2em;}
+.carprice{grid-area: carprice; font-size: 0.9em; color: var(--AkzentFarbe);}
 .carimage{grid-area: carimage;}
 .caryeartitle{grid-area: caryeartitle;}
 .caryear{grid-area: caryear; }
